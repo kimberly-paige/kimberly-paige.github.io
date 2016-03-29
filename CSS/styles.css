@@ -255,7 +255,7 @@ a {
 
 .section3 {
    display:flex;
-   height: 100vh;
+   width: 100%;
    background-image: url("../images/horse.png");
    background-repeat: no-repeat;
    background-size: cover;
@@ -313,6 +313,7 @@ a {
    background-image: url("../images/mb.jpg");
    background-repeat: no-repeat;
    background-size: cover;
+   width: 100%;
    height: 100vh;
    display: flex;
    flex-direction:column;
@@ -343,4 +344,5 @@ a {
 .blurb img {
    height: 77px;
    padding: 5px;
+   padding-top: 15px;
 }
