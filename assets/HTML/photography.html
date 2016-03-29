@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Colorado Photography</title>
+
+      <style>
+         body {
+            margin: 0;
+            padding: 0;
+         }
+
+         .navbar a {
+            text-decoration: none;
+            color: white;
+
+         }
+
+         .navbar {
+            position: fixed;
+            z-index: 500;
+            margin: auto;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #FFA17F; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #FFA17F , #00223E); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #FFA17F , #00223E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            opacity: .8;
+            /*position: absolute;
+            top: 0px;
+            left: 0px;*/
+
+         }
+
+         ul {
+            list-style: none;
+            width: 100%;
+            display: inline-flex;
+            font-family: sans-serif;
+            /*flex-direction: row;*/
+            /*justify-content: flex-start;*/
+         }
+
+         li {
+            line-height: .5;
+            width: 25%;
+
+            /*display: inline;
+            margin: 20px;*/
+            font-family: 'Old Standard TT', serif;
+            font-size: 1.5rem;
+
+         }
+
+         .wrapper2 {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            margin-top: 4%;
+         }
+
+
+         .card {
+            /*display: inline-flex;*/
+            height: auto;
+            width: 25%;
+            margin: auto;
+            margin-bottom: 24px;
+            /*margin-left: 10px;*/
+            padding: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         }
+
+         .card img {
+            height: inherit;
+            width: 100%;
+            margin: auto;
+            transition: all 0.5s ease;
+         }
+
+
+         #trial:after:hover {
+            content: "Medicine Bow";
+            color: #fff;
+            background-color: #2f4f4f
+            opacity: 0.8;
+         }
+
+         /*.4pic {
+            width: 50%
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+         }*/
+
+
+
+      </style>
+   </head>
+   <body>
+
+      <div class="navbar">
+      <ul>
+         <li>
+            <a href="index.html">Home</a>
+         </li>
+         <li>
+            <a href="#gallery">Gallery</a>
+         </li>
+         <li>
+            <a href="#about">About</a>
+         </li>
+         <li>
+            <a href="#contact">Contact</a>
+         </li>
+      </ul>
+   </div>
+
+      <div class="wrapper2">
+         <!-- <div class="4pic"> -->
+            <div class="card">
+               <img src="gateway.png" />
+            </div>
+
+            <div class="card">
+               <img src="bells.jpg" />
+            </div>
+
+            <div class="card">
+               <img src="bikes.jpg" />
+            </div>
+
+            <div class="card">
+               <img src="flower.jpg" />
+            </div>
+         <!-- </div> -->
+
+         <div class="card" id="trial">
+            <img src="mb.png" />
+         </div>
+
+         <div class="card">
+            <img src="shambala.jpg" />
+         </div>
+
+         <div class="card">
+            <img src="oscar.jpg" />
+         </div>
+
+         <div class="card">
+            <img src="tired.jpg" />
+         </div>
+
+         <div class="card">
+            <img src="redmtn.jpg" />
+         </div>
+
+         <!-- <div class="card">
+            <img src="" />
+         </div> -->
+
+      </div>
+
+
+
+
+
+   </body>
+</html>
