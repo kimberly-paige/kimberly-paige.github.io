@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Emilys+Candy);
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sans);
+
+a {
+   text-decoration: none;
+}
+
+.header {
+   display: inline-block;
+   width: 707px;
+   margin-left: 319px;
+   text-align: center;
+   font-size: 2.5em;
+   font-family: 'Emilys Candy', cursive;
+
+}
+
+div.header-nav-combo {
+		display: block;
+		width: 300px;
+      position: fixed;
+	}
+
+header.nav-header {
+         font-family: 'Emilys Candy', cursive;
+         font-size: 25px;
+         color: white;
+   	   display: block;
+         text-align: center;
+         padding-top: 5px;
+   		width: 300px;
+   		height: 70px;
+         background-color: #778b7c;
+      }
+
+nav.nav-vt {
+		display: block;
+		width: 300px;
+		background-color: #778b7c;
+	}
+
+ol, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		}
+
+li a {
+		display: block;
+		padding: 10px;
+		text-align: center;
+		text-decoration: none;
+      font-family: 'Cabin', sans-serif;
+		background-color: #cac0a9;
+		margin-top: 5px;
+      color: #000;
+	}
+
+li a:hover {
+		display: block;
+		padding: 10px;
+		text-align: center;
+		background-color: #d29855;
+		margin-top: 5px;
+	}
+
+.picture {
+   display: inline-block;
+   position: fixed;
+   /*height: 600px;*/
+   height: 100vh;
+   image-orientation: cover;
+   left: 314px;
+}

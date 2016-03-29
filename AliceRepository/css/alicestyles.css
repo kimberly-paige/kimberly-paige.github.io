@@ -1,0 +1,424 @@
+@import url(https://fonts.googleapis.com/css?family=Emilys+Candy);
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sans);
+
+body {
+   padding: 0;
+   margin: 0;
+}
+
+.content {
+   background-color: #FFF;
+   flex: 1 0 auto;
+   flex-grow: 1;
+   flex-shrink: 1; /*elements gets smaller from default*/
+   flex-basis: auto;
+   display: flex; /*default horizontal*/
+}
+
+.sidebar {
+   width: 25%;
+   position: fixed;
+   min-width: 100px;
+}
+
+.main {
+   display: flex;
+   flex-direction: column;
+   flex-shrink: 1;
+   background-color: #fff;
+   overflow-y: auto;
+   font-family: 'Cabin', sans-serif;
+   /*color: #2f4f4f;*/
+   color: #454444;
+   line-height: 1.25;
+   text-align:justify;
+   font-size: 18px;
+   width: 72%;
+   padding: 15px;
+   margin-left: 25%;
+   margin-right: 8%;
+}
+
+.main p {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+a {
+   text-decoration: none;
+   color: #778b7c;
+}
+
+h1 {
+   text-align: center;
+   font-size: 3em;
+   font-family: 'Emilys Candy', cursive;
+   text-shadow: 2px 2px 6px #c6c6c6;
+
+}
+
+header.nav-header {
+      width: 100%;
+
+}
+
+header.nav-header img {
+   width: 100%;
+   min-width: 100px;
+}
+
+nav.nav-vt {
+      width: 100%;
+		background-color: #778b7c;
+	}
+
+ol, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		}
+
+li a {
+		display: block;
+		padding: 10px;
+      height: 30px;
+		text-align: center;
+		text-decoration: none;
+      color: black;
+      font-family: 'Cabin', sans-serif;
+		background-color: #cac0a9;
+		margin-top: 5px;
+	}
+
+li a:hover {
+		/*display: block;*/
+		padding: 10px;
+		text-align: center;
+		background-color: #d29855;
+		margin-top: 5px;
+	}
+
+
+
+.bottomnav {
+      font-family: 'Cabin', sans-serif;
+      text-align:center;
+      font-size: 18px;
+
+   }
+
+
+
+   /*Chapter 2*/
+
+
+
+
+#note1 {
+      font-family: 'Cabin', sans-serif;
+      text-align:justify;
+      font-size: 18px;
+      margin-left: 22%;
+   }
+
+#note2 {
+      font-family: 'cabin', sans-serif;
+      text-align:justify;
+      font-size: 18px;
+      margin-left: 32%;
+   }
+
+#note3 {
+      font-family: 'Cabin', sans-serif;
+      text-align:justify;
+      font-size: 18px;
+      margin-left: 39%;
+   }
+
+#note4 {
+      font-family: 'Cabin', sans-serif;
+      text-align:justify;
+      font-size: 18px;
+      margin-left: 47%;
+   }
+
+.poem {
+      font-family: 'Cabin', sans-serif;
+      line-height: 1.2
+      font-size: 18px;
+      margin-left: 30%;
+   }
+
+
+   /*Chapter 3*/
+
+#smoke1 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 28%;
+}
+#smoke2 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 27%;
+}
+#smoke3 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 25%;
+}
+#smoke4 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 23%;
+}
+#smoke5 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 21%;
+}
+#smoke6 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 22%;
+}
+#smoke7 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 23%;
+}
+#smoke8 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 24%;
+}
+#smoke9 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 26%;
+}
+#smoke10 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 27%;
+}
+#smoke11 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 27%;
+}
+#smoke12 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 25%;
+}
+#smoke13 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 23%;
+}
+#smoke14 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 20%;
+}
+#smoke15 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 18%;
+}
+#smoke16 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 16%;
+}
+#smoke17 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 16%;
+}
+#smoke18 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 17%;
+}
+#smoke19 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 19%;
+}
+#smoke20 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 21%;
+}
+#smoke21 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 23%;
+}
+#smoke22 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 25%;
+}
+#smoke23 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 23%;
+}
+#smoke24 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 25%;
+}
+#smoke25 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 23%;
+}
+#smoke26 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 21%;
+}
+#smoke27 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 19%;
+}
+#smoke28 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 18%;
+}
+#smoke29 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 19%;
+}
+#smoke30 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 20%;
+}
+#smoke31 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 22%;
+}
+#smoke32 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 24%;
+}
+#smoke33 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 25%;
+}
+#smoke34 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 21%;
+}
+#smoke35 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 22%;
+}
+#smoke36 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 22%;
+}
+#smoke37 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 22%;
+}
+#smoke38 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 24%;
+}
+#smoke39 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 24%;
+}
+#smoke40 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 27%;
+}
+#smoke41 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 23%;
+}
+#smoke42 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 23%;
+}
+#smoke43 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 22%;
+}
+#smoke44 {
+   font-family: 'Cabin', sans-serif;
+   font-size: 18px;
+   margin-left: 23%;
+}
+
+
+/*Chapter 5*/
+#break {
+   padding-left: 33%;
+}
+
+/*Chapter 6*/
+
+.song{
+   font-family: 'Cabin', sans-serif;
+   text-align:center;
+   font-size: 18px;
+}
+
+
+/*Chapter 7*/
+
+.verse {
+   font-family: 'Cabin', sans-serif;
+   text-align:center;
+   line-height: 1.2;
+   font-size: 18px;
+}
+
+/*Chapter 11*/
+
+.scroll {
+   font-family: 'Cabin', sans-serif;
+   text-align:center;
+   font-size: 18px;
+}
+
+/*Chapter 12*/
+
+.verse12 {
+      font-family: 'Cabin', sans-serif;
+      line-height: 1.2;
+      text-align: center;
+      font-size: 18px;
+   }
+
+#end {
+      /*display: inline-block;*/
+      text-align: center;
+      font-size: 3em;
+      font-family: 'Emilys Candy', cursive;
+      text-shadow: 2px 2px 6px #c6c6c6;
+
+   }

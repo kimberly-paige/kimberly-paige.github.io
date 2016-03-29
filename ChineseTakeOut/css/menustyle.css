@@ -1,0 +1,60 @@
+body{
+   padding: 25px;
+   font-family: sans-serif;
+}
+
+.cathead {
+   text-align: center;
+   color: red;
+   text-shadow: 10%;
+   line-height: .05em;
+   font-weight: bold;
+}
+
+thead {
+   color: red;
+}
+
+table {
+   width: 100%;
+   position: center;
+}
+
+.specials {
+   display: block;
+   font-family: sans-serif;
+   border: 2px solid red;
+   border-radius: 25px;
+}
+
+.specialdishes {
+   width:100%;
+   padding-left: 10px;
+   padding-bottom: 10px;
+}
+
+.container {
+   float: left;
+   width: 50%;
+}
+
+.disclaim {
+   margin-top: 55px;
+   text-align: center;
+   color: red;
+   font-weight: bold;
+   line-height: 1.5px;
+}
+
+p {
+   color: black;
+   font-weight: lighter;
+}
+
+.spicy {
+   color: red;
+}
+
+.included {
+   font-size: .5em;
+}
