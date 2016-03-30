@@ -272,15 +272,26 @@ ul {
    width: 100%;
    height: 484px;
    /*background-color: #d8d8d8;*/
-   background-image: url("mount_phone.png");
+   /*background-image: url("mount_phone.png");*/
+}
+
+.section4 img {
+   width: 100%;
+   z-index: 5;
+
 }
 
 .captions {
    flex-direction: column;
    align-self: center;
    justify-content: flex-end;
-   margin-left: 737.5px;
    align-content: center;
+   z-index: 96;
+   position: absolute;
+   margin-left: -43%;
+    padding-top: 17%;
+}
+
 }
 
 .explore2 {
@@ -375,6 +386,7 @@ ul {
 .tablet {
    padding-top: 157.3px;
    margin: auto;
+   width: 100%;
 }
 
 .footer {
