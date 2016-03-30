@@ -156,7 +156,6 @@ h3 {
    align-items: center;
    width: 50%;
    position: relative;
-   padding: 1.75rem;
    background-color: white;
    color: black;
    font-size: 2.5rem;
@@ -167,10 +166,12 @@ h3 {
 
 
 .caption p {
-   padding: 0px;
+   padding-left: 15px;
+   padding-right: 15px;
    margin: 0px;
-   font-size: 1rem;
+   font-size: 1.25rem;
    font-family: 'Open Sans', sans-serif;
+   text-align: justify;
    flex-shrink: 1;
 
 }
@@ -258,9 +259,6 @@ a {
 .section3 {
    display:flex;
    width: 100%;
-   /*background-image: url("../images/horse.png");
-   background-repeat: no-repeat;*/
-   /*background-size: cover;*/
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -276,7 +274,7 @@ a {
    margin-left: -95%;
    padding: 1rem;
    font-size: 1rem;
-   color: gray;
+   color: #424242;
    opacity: 0.6;
    background-color: #fff;
    text-align: center;
@@ -292,12 +290,14 @@ a {
    font-size: 2.5rem;
    margin-top: 2px;
    margin-bottom: 15px;
+   color: #424242;
 }
 
 .about_me p {
    margin-top: -4px;
    margin-bottom: 15px;
    font-family: 'Open Sans', sans-serif;
+   text-align: justify;
 }
 
 
@@ -318,7 +318,6 @@ a {
 }
 
 .section4 {
-   /*background-image: url("../images/mail.jpg");*/
    background-image: url("../images/mb.jpg");
    background-repeat: no-repeat;
    background-size: cover;
@@ -326,7 +325,6 @@ a {
    height: 100vh;
    display: flex;
    flex-direction:column;
-   /*margin: auto;*/
    align-content: center;
    padding-bottom: 5%;
    justify-content: space-between;
@@ -340,9 +338,8 @@ a {
    margin: auto;
    font-size: 2rem;
    padding: 1rem;
-   color: black;
    background-color: #fff;
-   color: gray;
+   color: #424242;
    opacity: 0.6;
    text-align: center;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
