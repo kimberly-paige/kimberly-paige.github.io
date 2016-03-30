@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Snowflake</title>
+<style>
+
+body {
+   background-color: #162D50;
+
+}
+
+canvas {
+   position: absolute;
+}
+
+.snowman {
+   visibility: hidden;
+   position: relative;
+
+}
+
+.topCircle {
+      top: 200px;
+      left: 40px;
+      position: absolute;
+   }
+
+   .midCircle {
+      top: 320px;
+      left: 40px;
+      position: absolute;
+   }
+
+   .bottomCircle {
+      top: 450px;
+      left: 40px;
+      position: absolute;
+   }
+
+h1 {
+   color: lightblue;
+   text-align: center;
+}
+
+
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+
+window.onload = function(){
+	//canvas init
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+
+	//canvas dimensions
+	var W = window.innerWidth;
+	var H = window.innerHeight;
+	canvas.width = W;
+	canvas.height = H;
+
+	//snowflake particles
+	var mp = 100; //max particles
+	var particles = [];
+	for(var i = 0; i < mp; i++)
+	{
+		particles.push({
+			x: Math.random()*W, //x-coordinate
+			y: Math.random()*H, //y-coordinate
+			r: Math.random()*4+1, //radius
+			d: Math.random()*mp //density
+		})
+	}
+
+	//Lets draw the flakes
+	function draw()
+	{
+		ctx.clearRect(0, 0, W, H);
+
+		ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+		ctx.beginPath();
+		for(var i = 0; i < mp; i++)
+		{
+			var p = particles[i];
+			ctx.moveTo(p.x, p.y);
+			ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
+		}
+		ctx.fill();
+		update();
+	}
+
+	//Function to move the snowflakes
+	//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
+	var angle = 0;
+	function update()
+	{
+		angle += 0.01;
+		for(var i = 0; i < mp; i++)
+		{
+			var p = particles[i];
+			//Updating X and Y coordinates
+			//We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
+			//Every particle has its own density which can be used to make the downward movement different for each flake
+			//Lets make it more random by adding in the radius
+			p.y += Math.cos(angle+p.d) + 1 + p.r/2;
+			p.x += Math.sin(angle) * 2;
+
+			//Sending flakes back from the top when it exits
+			//Lets make it a bit more organic and let flakes enter from the left and right also.
+			if(p.x > W+5 || p.x < -5 || p.y > H)
+			{
+				if(i%3 > 0) //66.67% of the flakes
+				{
+					particles[i] = {x: Math.random()*W, y: -10, r: p.r, d: p.d};
+				}
+				else
+				{
+					//If the flake is exitting from the right
+					if(Math.sin(angle) > 0)
+					{
+						//Enter from the left
+						particles[i] = {x: -5, y: Math.random()*H, r: p.r, d: p.d};
+					}
+					else
+					{
+						//Enter from the right
+						particles[i] = {x: W+5, y: Math.random()*H, r: p.r, d: p.d};
+					}
+				}
+			}
+		}
+	}
+
+	//animation loop
+	setInterval(draw, 33);
+}
+
+function draw(id) {
+    var canvas = document.getElementById(id);
+    if (canvas.getContext) {
+        var context = canvas.getContext('2d');
+        var width = canvas.width;
+        var height = canvas.height;
+        context.lineWidth = 8;
+        context.lineCap = 'round';
+        context.fillStyle = "transparent";
+        context.strokeStyle = "#FFFFFF";
+        context.fillRect(0,0,width,height);
+        context.translate(width/5,height/5);
+        for(var count = 0; count < 6; count++) {
+           context.save();
+           drawSegment(context, 50, 20);
+           drawSegment(context, 50, 40);
+           drawSegment(context, 50, 0);
+           context.restore();
+           context.rotate(Math.PI/3);
+
+         }
+     }
+
+     if (canvas.getContext) {
+         var context = canvas.getContext('2d');
+         var width = canvas.width;
+         var height = canvas.height;
+         context.lineWidth = 10;
+         context.lineCap = 'round';
+         context.fillStyle = 'transparent';
+         context.strokeStyle = "#FFFFFF";
+         context.fillRect(0,0,width,height);
+         context.translate(width/2,height/2);
+         for(var count = 0; count < 6; count++) {
+            context.save();
+            drawSegment(context, 50, 20);
+            drawSegment(context, 50, 40);
+            drawSegment(context, 50, 0);
+            context.restore();
+            context.rotate(Math.PI/3);
+         }
+      }
+
+      if (canvas.getContext) {
+          var context = canvas.getContext('2d');
+          var width = canvas.width;
+          var height = canvas.height;
+          context.lineWidth = 6;
+          context.lineCap = 'round';
+          context.fillStyle = 'transparent';
+          context.strokeStyle = "#FFFFFF";
+          context.fillRect(0,0,width,height);
+          context.translate(width/4,height/4);
+          for(var count = 0; count < 6; count++) {
+             context.save();
+             drawSegment(context, 25, 10);
+             drawSegment(context, 25, 20);
+             drawSegment(context, 25, 0);
+             context.restore();
+             context.rotate(Math.PI/3);
+          }
+       }
+
+ }
+
+ function drawSegment(context, segmentLength, branchLength) {
+    context.beginPath();
+    context.moveTo(0,0);
+    context.lineTo(segmentLength,0);
+    context.stroke();
+    context.translate(segmentLength,0);
+    if (branchLength > 0) {
+        drawBranch(context, branchLength, 1);
+        drawBranch(context, branchLength, -1);
+    }
+}
+
+function drawBranch(context, branchLength, direction) {
+    context.save();
+    context.rotate(direction*Math.PI/3);
+    context.moveTo(0,0);
+    context.lineTo(branchLength,0);
+    context.stroke();
+    context.restore();
+}
+
+function main (){
+   draw('myCanvas');
+   // draw('mysnowflake');
+   // draw("snowFlake")
+}
+
+document.onclick = function(){
+  $(".snowman").css("visibility", "visible");
+
+}
+
+
+
+
+</script>
+</head>
+<body onload="main();">
+
+   <canvas  id="myCanvas" width="1000" height="500" style="width:100%; height:100%"></canvas>
+   <canvas id="canvas" width="1000" height="500" style="width:100%; height:100%"></canvas>
+
+
+
+   <div class="snowman">
+      <h1>Project Snowflake!</h1>
+
+
+         <div class="circles">
+		<div class="topCircle"><svg xmlns="http://www.w3.org/2000/svg">
+			<!--head-->
+  			<circle r="70" cx="70" cy="70" fill="white"/>
+  			<!--right eye-->
+  			<circle r="10" cx="40" cy="50" fill="black"/>
+  			<!--left eye-->
+  			<circle r="10" cx="80" cy="50" fill="black"/>
+  			<!--mouth-->
+  			<circle r="5" cx="38" cy="90" fill="black"/>
+  			<circle r="5" cx="45" cy="100" fill="black"/>
+  			<circle r="5" cx="55" cy="108" fill="black"/>
+  			<circle r="5" cx="67" cy="112" fill="black"/>
+  			<circle r="5" cx="79" cy="108" fill="black"/>
+  			<circle r="5" cx="89" cy="100" fill="black"/>
+  			<circle r="5" cx="96" cy="90" fill="black"/>
+  			<!--nose-->
+  			<circle r="8" cx="60" cy="73" fill="orange"/>
+  		</svg>
+  		</div>
+
+  		<div class="midCircle"><svg xmlns="http://www.w3.org/2000/svg">
+  			<circle r="80" cx="80" cy="80" fill="white"/>
+  			<!--buttons-->
+  			<circle r="10" cx="60" cy="30" fill="black"/>
+  			<circle r="10" cx="60" cy="65" fill="black"/>
+  			<circle r="10" cx="60" cy="100" fill="black"/>
+  		</svg>
+  		</div>
+
+  		<div class="bottomCircle"><svg xmlns="http://www.w3.org/2000/svg">
+  			<circle r="90" cx="90" cy="90" fill="white"/>
+  		</svg>
+  		</div>
+  	</div>
+   </div>
+
+
+</body>
+</html>
