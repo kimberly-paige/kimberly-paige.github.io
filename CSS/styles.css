@@ -353,6 +353,138 @@ a {
    padding-top: 15px;
 }
 
+/*High Retina Screens*/
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+   .card:nth-child(even) {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .card:nth-child(odd) {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .card {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 15px;
+   }
+
+   .caption {
+      width: 100%;
+   }
+
+   .caption p {
+      font-size: 14px;
+   }
+
+   .card img {
+      width: 100%;
+   }
+
+   button {
+       background-color: #053C5D;
+       border: none;
+       max-width: 200px;
+       color: white;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       position:relative;
+       bottom: 2px;
+       font-size: 16px;
+   }
+
+      /*right arrow*/
+   .caption.right:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 46%;
+      top: -107px;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 25px solid #fff;
+      margin-top: 54px;
+      transition: all 0.5s ease;
+   }
+
+      /*left arrow*/
+   .caption.left:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 46%;
+      top: -107px;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 25px solid #fff;
+      margin-top: 54px;
+      transition: all .75s ease;
+   }
+
+   .caption:hover {
+      /*background-color: #3F51B5;*/
+      /*background-color: gray;*/
+      background-color: #d3d3d3;
+   }
+
+   .caption.left:hover:after {
+      border-left-color: transparent;
+      border-bottom-color: #d3d3d3;
+   }
+
+   .caption.right:hover:before {
+      border-right-color: transparent;
+      border-bottom-color: #d3d3d3;
+
+   }
+
+
+   .about_me {
+    position: absolute;
+    width: 80%;
+    margin-top:10%;
+    margin-left: -92%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #424242;
+    opacity: 0.6;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Open Sans', serif;
+    margin-bottom: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 20px;
+}
+
+
+   .blurb {
+    font-family: 'Open Sans', serif;
+    width: 80%;
+    margin: auto;
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: #fff;
+    color: #424242;
+    opacity: 0.6;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+}
+
+/*Low Res Small Screen*/
+
 @media  (max-width: 600px) {
    .card:nth-child(even) {
       display: flex;
