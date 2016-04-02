@@ -376,10 +376,11 @@ a {
 
    .caption {
       width: 100%;
+      font-size: 3rem;
    }
 
    .caption p {
-      font-size: 14px;
+      font-size: 2rem;
    }
 
    .card img {
