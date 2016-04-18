@@ -478,12 +478,12 @@ a {
 @media  (max-width: 600px) {
    .card:nth-child(even) {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
    }
 
    .card:nth-child(odd) {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
    }
 
    .card {
@@ -493,7 +493,7 @@ a {
    }
 
    .caption {
-      width: 88%;
+      width: 100%;
    }
 
    .caption p {
