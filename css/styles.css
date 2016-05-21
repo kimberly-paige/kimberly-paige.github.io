@@ -363,15 +363,16 @@ High Retina Screens
 
    .card:nth-child(even) {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
    }
 
    .card:nth-child(odd) {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
    }
 
    .card {
+      max-width: 850px;
       width: 90%;
       margin: auto;
       margin-bottom: 35px;
