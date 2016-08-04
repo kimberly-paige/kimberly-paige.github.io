@@ -1,0 +1,185 @@
+[33mcommit ab7a5284e7fc8e80f6dd32e9c0542dc6b0e6f81e[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Tue Jul 26 09:27:54 2016 -0600
+
+    max width set
+
+[33mcommit b6863eb65990340a526531f9102e41a3094dfc9b[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Sat May 21 11:49:59 2016 -0600
+
+    corrected card title
+
+[33mcommit fff701ea25409ea0430d0870e17e859d2bfbe42a[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Sat May 21 11:47:19 2016 -0600
+
+    corrected card wraps in mobile, set max width for card size on mobile, added pics to gallery on anew paige decor site
+
+[33mcommit 6150f2c17b6ed2597c2eddf30b01ec6cd351bc15[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Wed May 11 11:11:24 2016 -0600
+
+    added Anew Paige Decor to gallery
+
+[33mcommit e5d8737e5e959693ae6c4476c04d34a681509529[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Mon Apr 18 13:55:15 2016 -0600
+
+    fixed wrap for small screen
+
+[33mcommit e4f86e142c660065f9573a42337e0533a1e7b2f0[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Mon Apr 18 13:44:40 2016 -0600
+
+    fixed missing image link
+
+[33mcommit a40e34baef8b02f1a2205c395c6ba3b6fcee9509[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Sat Apr 16 09:23:01 2016 -0600
+
+    better file org for mockups
+
+[33mcommit 74174ca235f628bf30160c6ad620c4135d2e9511[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Sat Apr 16 09:22:03 2016 -0600
+
+    cleanup files
+
+[33mcommit a2b9958952d651f06463e26125e8a3f2174d327e[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Tue Apr 5 12:42:20 2016 -0600
+
+    about me change
+
+[33mcommit db3ca884000c28e6d232d28e9e8744df4b3d7450[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Tue Apr 5 11:34:59 2016 -0600
+
+    decapitalized file names
+
+[33mcommit a56d88a3464c65efecf90fc31865f659728fb863[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Tue Apr 5 11:33:30 2016 -0600
+
+    clean up
+
+[33mcommit ea575d52f2be5915a0018e9d1237869189eb5a63[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Tue Apr 5 11:27:38 2016 -0600
+
+    additional mobile styling, re-ordering gallery, reduced opacity
+
+[33mcommit bf9da013d6d4ed3291b5b7c455418821b9f8f8ce[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Sat Apr 2 13:38:14 2016 -0600
+
+    text size increased for mobile
+
+[33mcommit 8b19fddd0be4a215a397f13d8bce310351888e8b[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Sat Apr 2 13:34:02 2016 -0600
+
+    high retina screen styling
+
+[33mcommit 9461c71a28e8efd7aa391f9b83fc5d5eabc8bc07[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Wed Mar 30 16:53:29 2016 -0600
+
+    slight change in descriptions
+
+[33mcommit 953a8f6692788b497bd2c3e95b2d154022717f0d[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Wed Mar 30 09:46:34 2016 -0600
+
+    corrected padding, added titles to pic, adjusted font colors
+
+[33mcommit bad3b0322811dc29b8988c886db7a40392949353[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Tue Mar 29 20:30:26 2016 -0600
+
+    adding mobile styling
+
+[33mcommit 3b12cbddc16863428368df3b579cdd25c1711536[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Tue Mar 29 19:10:15 2016 -0600
+
+    basic js project for portfolio
+
+[33mcommit 5910013f5c981774645c23d0a078bf171ddd7e00[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Tue Mar 29 19:08:16 2016 -0600
+
+    removing bunk folder
+
+[33mcommit a12f9ac193ac798932af581482c480496ecbd4ce[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Tue Mar 29 18:59:47 2016 -0600
+
+    added a basic JS project to portfolio
+
+[33mcommit eda9aedfbc40bf9721d0e517a469bd686814f66e[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Tue Mar 29 18:45:46 2016 -0600
+
+    fixed code for images alignment
+
+[33mcommit 9317246f73505e6f2fb8e988e938deba7d746e4e[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Tue Mar 29 18:19:11 2016 -0600
+
+    missing image links
+
+[33mcommit ebbec2baa80d18785281667b02eebce400de8257[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Tue Mar 29 18:13:17 2016 -0600
+
+    fixed broken links
+
+[33mcommit 7bd033f72f7741a3b71c1338e36a458de9fcdef4[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Tue Mar 29 13:58:18 2016 -0600
+
+    compressed image sizes
+
+[33mcommit cf4adc1b71ba65c411cc6bc99d9a72c8bce4dcbd[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Mon Mar 28 21:31:06 2016 -0600
+
+    updated css path
+
+[33mcommit 32fb4108d35d9884e5f7301b88d1525dbb8674d4[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Mon Mar 28 21:27:07 2016 -0600
+
+    Add folders back
+
+[33mcommit 136565c712b7a964759bda771515fa19a4209502[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Mon Mar 28 21:26:08 2016 -0600
+
+    Remove folder
+
+[33mcommit 3aac50daaa1b8222cefe1c6e732672fa3f3377ff[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Mon Mar 28 21:23:40 2016 -0600
+
+    Add folders
+
+[33mcommit 019dbe06d27ee88aed5f32eb1ac428c8d4e8b42d[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Mon Mar 28 21:21:59 2016 -0600
+
+    Remove two folders
+
+[33mcommit 316673043a8a10bc3825d1454d5ca699f36017ba[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Mon Mar 28 21:15:58 2016 -0600
+
+    Organize folders and add email icon
+
+[33mcommit 65298ad63d4ad199934c193a7e39f43a37791472[m
+Author: kimberly-paige <paige576@gmail.com>
+Date:   Mon Mar 28 20:37:50 2016 -0600
+
+    First commit
